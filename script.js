@@ -1,3 +1,4 @@
+
 const botonNumero = document.querySelectorAll('[data-numero]')
 const botonOperador = document.querySelectorAll('[data-operador]')
 const botonIgual = document.querySelector('[data-igual]')
