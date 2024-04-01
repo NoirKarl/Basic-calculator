@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: url(assets/14\ Places\ To\ See\ On\ A\ Drive\ From\ Vancouver\ To\ Calgary.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.calculadora{
+    width: 400px;
+    height: 600px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: 130px repeat(6,80px);
+    justify-content: center;
+    border-radius: 20px;
+    padding-top: 20px;
+    
+}
+
+
+.calculadora button {
+    font-size: 1.5rem;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px red solid;
+    margin: 2px;
+    color: white;
+}
+
+
+
+.calculadora button:hover{
+    background-color: skyblue;
+}
+
+
+
+
+.display{
+    height: 120px;
+    background-color: whitesmoke;
+    opacity: .7;
+    grid-column: 1/-1;
+    border: 2px goldenrod solid;
+    text-align: end;
+    padding: 10px 0;
+}
+
+.span2{
+    grid-column: span 2;
+}
+
+.valor-superior{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.valor-inferior{
+    color: black;
+    font-size: 2rem;
+}
