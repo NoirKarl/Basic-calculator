@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url(ce71054a85def675e4c1e5e4759734c1.jpg);
+    background-image: url(Imagen\ Fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,20 +20,22 @@ body{
 .calculadora{
     width: 400px;
     height: 600px;
-    background-color: black;
+    background-color: #e3f2f3;
     display: grid;
     grid-template-columns: repeat(4,80px);
     grid-template-rows: 130px repeat(6,80px);
     justify-content: center;
     border-radius: 20px;
     padding-top: 20px;
+    border: black;
+
     
 }
 
 
 .calculadora button {
     font-size: 1.5rem;
-    background-color: black;
+    background-color: #fc9f5f;
     border-radius: 50%;
     border: 2px red solid;
     margin: 2px;
@@ -43,7 +45,7 @@ body{
 
 
 .calculadora button:hover{
-    background-color: skyblue;
+    background-color: #FFB876;
 }
 
 
@@ -51,10 +53,10 @@ body{
 
 .display{
     height: 120px;
-    background-color: whitesmoke;
+    background-color: #fc96f1;
     opacity: .7;
     grid-column: 1/-1;
-    border: 2px goldenrod solid;
+    border: 2px rgb(0, 0, 0) solid;
     text-align: end;
     padding: 10px 0;
 }
