@@ -2,76 +2,41 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.3;
 }
 
-.container{
+
+body {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-}
-
-body{
-    background-image: url(Imagen\ Fondo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.calculadora{
-    width: 400px;
-    height: 600px;
-    background-color: #e3f2f3;
-    display: grid;
-    grid-template-columns: repeat(4,80px);
-    grid-template-rows: 130px repeat(6,80px);
-    justify-content: center;
-    border-radius: 20px;
-    padding-top: 20px;
-    border: black;
-
-    
-}
-
-
-.calculadora button {
-    font-size: 1.5rem;
-    background-color: #fc9f5f;
-    border-radius: 50%;
-    border: 2px red solid;
-    margin: 2px;
+    align-items: center;
+    font-size: 300%;
+    font-family: calibri;
     color: white;
+    background: linear-gradient(#77f2de,#ff9d2e);
 }
 
-
-
-.calculadora button:hover{
-    background-color: #FFB876;
+.marco {
+    border-radius: 30px;
+    background: black;
+    padding: 30px;
+    border: 5px solid white;
 }
 
-
-
-
-.display{
-    height: 120px;
-    background-color: #fc96f1;
-    opacity: .7;
-    grid-column: 1/-1;
-    border: 2px rgb(0, 0, 0) solid;
-    text-align: end;
-    padding: 10px 0;
+.botones-contenedor {
+    display: flex;
+    justify-content: space-around;
 }
 
-.span2{
-    grid-column: span 2;
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 60%;
+    padding: 20px;
 }
 
-.valor-superior{
-    color: black;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.valor-inferior{
-    color: black;
-    font-size: 2rem;
+.btn:hover{
+    transform: scale(1.1);
+    color: #ffa0ee;
 }
